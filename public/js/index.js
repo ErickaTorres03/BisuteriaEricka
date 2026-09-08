@@ -125,7 +125,6 @@ function inicializarWhatsApp() {
 
     let mensaje = `Hola, estoy interesado(a) en el producto "${nombre}".\n`;
     if (precio) mensaje += `Precio: ${precio}\n`;
-    if (imagenUrl) mensaje += `Ver foto: ${imagenUrl}\n`;
     mensaje += `Quiero comprarlo. ✨`;
 
     const whatsappUrl = `https://wa.me/${numeroTelefono}?text=${encodeURIComponent(mensaje)}`;
